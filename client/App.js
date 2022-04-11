@@ -5,7 +5,7 @@ import Form from "./components/Form.js";
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text>Add a movie you have watched:</Text>
       <StatusBar style="auto" />
       <Form></Form>
     </View>
