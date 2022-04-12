@@ -1,57 +1,41 @@
-# 🚀 Getting started with Strapi
+# Brandbook POC
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html) (CLI) which lets you scaffold and manage your project in seconds.
+### To run this project on your local computer:
 
-### `develop`
+To install and run this programme on your local computer, you will need Node.js, MySQL and npm on your computer, and Expo Go on your mobile.
 
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-develop)
+1. Clone the repository to your local computer and navigate to the directory where you saved the repository.
+2. Create a MySQL database, add a user with a password, and grant permissions to the user on that database.
+3. In the `.env` file in the root of the project, save the above credentials to `DATABASE_NAME`, `DATABASE_USERNAME`, and `DATABASE_PASSWORD` variables, respectively.
+4. Start a terminal window in your repository's directory. Type `npm install` and wait for the process to run. This will ensure that you have the right dependencies installed.
+5. Type `npm run development` to start the server.
+6. Type `cd client` to navigate to the client folder.
+7. Once there, type `npm start` to start the client.
+8. When that is done, type `w` to view the app in your browser.
+9. To view the app on your iOS or Android device, you will need to install Expo Go on them. After that, you can scan the QR code in the terminal.
 
-```
-npm run develop
-# or
-yarn develop
-```
+## Steps taken:
 
-### `start`
+1. Create a MySQL database and user for the project.
+2. Create a Strapi project and connect it to the SQL database and user.
+3. Hide database login details and tokens in uncommitted .env file.
+4. Start Git repository and commit initial project setup.
+5. Create movies model on Strapi UI and grant all users access.
+6. Install GraphQL plugin and test the endpoint with a GraphQL query and mutation.
+7. Install Expo and use it to create a React Native project.
+8. Create a form to add movies and test the form within the client using console.log.
+9. Call the backend using a GraphQL query and test that a movie is being added to the database.
+10. Add styling and test iOS and Android display.
 
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-start)
+### Sources consulted outside of those provided:
 
-```
-npm run start
-# or
-yarn start
-```
+- https://medium.com/react-native-development/easily-build-forms-in-react-native-9006fcd2a73b
+- https://stepzen.com/docs/using-graphql/making-queries-with-fetch
 
-### `build`
+### Given more time, I would:
 
-Build your admin panel. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-build)
-
-```
-npm run build
-# or
-yarn build
-```
-
-## ⚙️ Deployment
-
-Strapi gives you many possible deployment options for your project. Find the one that suits you on the [deployment section of the documentation](https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/deployment.html).
-
-## 📚 Learn more
-
-- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
-- [Strapi blog](https://docs.strapi.io) - Official Strapi blog containing articles made by the Strapi team and the community.
-- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
-
-Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
-
-## ✨ Community
-
-- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
-- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
-- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
-
----
-
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+- Deploy the app to learn that process too
+- Include validation and error handling on the front end
+- Add snapshot tests to the front end
+- Make use of Apollo client to simplify queries
+- Enable the user to view, edit and delete watched movies
