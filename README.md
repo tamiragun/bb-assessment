@@ -25,7 +25,7 @@ To install and run this programme on your local computer, you will need Node.js,
 7. Install Expo and use it to create a React Native project.
 8. Create a form to add movies and test the form within the client using console.log.
 9. Call the backend using a GraphQL query and test that a movie is being added to the database.
-10. Add styling and test iOS and Android display.
+10. Add styling and test iOS display. Ran out of time to learn Android Studio and test there.
 
 ### Sources consulted outside of those provided:
 
@@ -34,8 +34,11 @@ To install and run this programme on your local computer, you will need Node.js,
 
 ### Given more time, I would:
 
-- Deploy the app to learn that process too
+- Debug the unresolved promise on iPhone
+- Test on Android studio emulator
 - Include validation and error handling on the front end
-- Add snapshot tests to the front end
+- Add tests to the front end
 - Make use of Apollo client to simplify queries
+- Deploy the app to learn that process too
 - Enable the user to view, edit and delete watched movies
+- Improve UX and styling across
